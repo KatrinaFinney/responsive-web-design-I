@@ -1,3 +1,281 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body {
+	margin: 0 auto;
+    width: 900px;
+    
+}
+
+a {
+	text-decoration: none;
+	color: lightgrey;
+	font-size: 14px;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+	padding: 40px 0 70px 0;
+	word-spacing: 50px;
+}
+
+nav a:first-child {
+	padding-left: 0px;
+}
+
+.logo {
+
+    padding-left: 110px;
+    
+    
+}
+
+header {
+    text-align: center;
+    display:flex;
+
+}
+
+h1 {
+	font-size: 75px;
+	margin-top: 60px;
+}
+
+.headerwithbutton {
+	width: 900px;
+    display: flex;
+    flex-direction:column;
+}
+
+.right {
+	display: flex;
+	width: 900px;
+	align-items:flex-start;
+}
+
+.getstarted {
+	
+	background-color: white;
+	font-size: 18px;
+	padding: 3px 45px;
+	text-decoration: none;
+	border: 1px solid black;
+	margin: 0 auto;
+	font-family: 'Titillium Web';
+}
+
+hr {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 95%;
+	margin: 60px 0 0 0;
+	border: none;
+}
+
+.featuresabout {
+    display: flex;
+    justify-content: space-between;
+	width: 900px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
 
 
+
+h2 {
+	font-size: 17px;
+	
+	margin: 25px 0;
+}
+
+.middleRow {
+    display: flex;
+    justify-content: space-between;
+	width: 900px;
+    margin-bottom: 5px;
+    
+}
+#services{
+    padding: 10px;
+}
+
+#product{
+    padding: 10px;
+}
+
+#vision{
+    padding: 10px;
+}
+
+p {
+	line-height: 1.2;
+}
+
+footer {
+	text-align: center;
+	height: 100px;
+	padding: 20px;
+	font-size: 14px;
+}
+
+
+.hr2 {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 95%;
+	margin: 40px 0 0 0;
+	border: none;
+}
+
+address {
+	line-height: 1.2;
+}
+/*Tablet */
+@media (max-width: 800px){
+    nav{
+        width: 100;
+        display:flex;
+        flex-direction: column-reverse;
+        align-items:center;
+        
+        
+    }
+    .headerwithbutton{
+        padding-bottom: 75px;
+    }
+    .navRow{
+        width:95%;
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+    .logo{
+        padding-right: 60px;
+        padding-bottom: 20px;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .circleimg{
+        display:none;
+    }
+}
+/*Mobile*/
+@media (max-width: 500px){
+    nav{
+        width: 100%;
+        display:flex;
+        flex-direction: column-reverse;
+        align-items:center;
+        
+        
+    }
+    a{
+        text-align: center;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        padding: 5%;
+        font-size: 20px;
+    }
+    .navRow{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width:100%
+        
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .circleimg{
+        display:none;
+    }
+    .featuresabout{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .middleRow{
+        display:flex;
+        flex-direction: column;
+    }
+    .logo{
+        padding-right: 20%;
+    }
+    
+}
